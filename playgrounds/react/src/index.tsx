@@ -1,11 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Color } from '@ds.e/react';
+import { Text, Margin, Select } from '@ds.e/react';
 
-import '@ds.e/scss/lib/Color.css';
+import '@ds.e/scss/lib/Utilities.css';
+import '@ds.e/scss/lib/Text.css';
+import '@ds.e/scss/lib/Margin.css';
+import '@ds.e/scss/lib/global.css';
+
+const options = [
+  {
+    label: 'Strict Black',
+    value: 'strict-black',
+  },
+  {
+    label: 'Heavenly Green',
+    value: 'heavenly-green',
+  },
+  {
+    label: 'Sweet Pink',
+    value: 'pink',
+  },
+];
 
 ReactDOM.render(
-  <Color hexCode="#000" width="1rem" height="1rem" />,
+  <div>
+    <Select options={options} />
+  </div>,
   document.querySelector('#root')
 );
