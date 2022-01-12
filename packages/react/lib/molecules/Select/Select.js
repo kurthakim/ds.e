@@ -91,7 +91,7 @@ const Select = ({ options = [], label = 'Please select an option ...', onOptionS
             React.createElement(Text, null, selectedOption === null ? label : selectedOption.label),
             React.createElement("svg", { className: `dse-select__caret ${isOpen ? 'dse-select__caret--open' : 'dse--select__caret--closed'} h-6 w-6`, width: "1rem", height: "1rem", xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" },
                 React.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 9l-7 7-7-7" }))),
-        isOpen ? (React.createElement("ul", { role: "menu", id: "dse-select-list", style: { top: overlayTop }, className: "dse-select__overlay" }, options.map((option, optionIndex) => {
+        React.createElement("ul", { role: "menu", id: "dse-select-list", style: { top: overlayTop }, className: `dse-select__overlay ${isOpen ? 'dse-select__overlay--open' : ''}` }, options.map((option, optionIndex) => {
             const isSelected = selectedIndex === optionIndex;
             const isHighlighted = highlightedIndex === optionIndex;
             const ref = optionRefs[optionIndex];
@@ -122,7 +122,7 @@ const Select = ({ options = [], label = 'Please select an option ...', onOptionS
                 React.createElement(Text, null, option.label),
                 isSelected ? (React.createElement("svg", { height: "1rem", width: "1rem", xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" },
                     React.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 13l4 4L19 7" }))) : null));
-        }))) : null));
+        }))));
 };
 
 export { Select as default };

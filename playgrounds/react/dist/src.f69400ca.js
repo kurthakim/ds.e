@@ -29895,13 +29895,13 @@ const Select = ({
     strokeLinejoin: "round",
     strokeWidth: 2,
     d: "M19 9l-7 7-7-7"
-  }))), isOpen ? _react.default.createElement("ul", {
+  }))), _react.default.createElement("ul", {
     role: "menu",
     id: "dse-select-list",
     style: {
       top: overlayTop
     },
-    className: "dse-select__overlay"
+    className: `dse-select__overlay ${isOpen ? 'dse-select__overlay--open' : ''}`
   }, options.map((option, optionIndex) => {
     const isSelected = selectedIndex === optionIndex;
     const isHighlighted = highlightedIndex === optionIndex;
@@ -29946,7 +29946,7 @@ const Select = ({
       strokeWidth: 2,
       d: "M5 13l4 4L19 7"
     })) : null);
-  })) : null);
+  })));
 };
 
 exports.default = Select;
@@ -30154,7 +30154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37445" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42217" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

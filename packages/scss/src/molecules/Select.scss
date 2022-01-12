@@ -10,6 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: green;
+
     @include padding('xs');
     border: 1px solid $form-border-color;
     background: $form-bg-color;
@@ -35,6 +37,7 @@
     border: 1px solid $form-border-color;
     background-color: $form-bg-color;
     z-index: 99;
+    display: none;
 
     list-style-type: none;
     box-shadow: map-get($shadows, 'base');
@@ -64,5 +67,11 @@
   &__option--selected {
     background-color: $form-bg-option-selected;
     color: $form-color-option-selected;
+  }
+}
+
+.dse-select__overlay {
+  &--open {
+    display: block;
   }
 }

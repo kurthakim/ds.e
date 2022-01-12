@@ -16,6 +16,7 @@
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.3.4",
     "jest": "^27.4.7",
     "react": "^17.0.2",
     "rollup": "^2.63.0",
@@ -28,6 +29,10 @@
     "test": "jest --verbose",
     "test:watch": "yarn test --watch",
     "start-storybook": "start-storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --project-token=e49b9b571085"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

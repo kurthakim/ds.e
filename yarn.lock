@@ -2415,6 +2415,28 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@storybook/addon-a11y@^6.4.12":
+  version "6.4.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.4.12.tgz#85e19f544ba6f03e65c527678cd96c2044f3da08"
+  integrity sha512-Vq0PS4k7g0LXhV69uLep9cUA+0u78zH3ouLy6Y1KBHp6GV0n5te5UT2n/HsVuskWzOfSubqF1asMmY7onGJkQA==
+  dependencies:
+    "@storybook/addons" "6.4.12"
+    "@storybook/api" "6.4.12"
+    "@storybook/channels" "6.4.12"
+    "@storybook/client-logger" "6.4.12"
+    "@storybook/components" "6.4.12"
+    "@storybook/core-events" "6.4.12"
+    "@storybook/csf" "0.0.2--canary.87bc651.0"
+    "@storybook/theming" "6.4.12"
+    axe-core "^4.2.0"
+    core-js "^3.8.2"
+    global "^4.4.0"
+    lodash "^4.17.21"
+    react-sizeme "^3.0.1"
+    regenerator-runtime "^0.13.7"
+    ts-dedent "^2.0.0"
+    util-deprecate "^1.0.2"
+
 "@storybook/addon-knobs@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-6.4.0.tgz#fa5943ef21826cdc2e20ded74edfdf5a6dc71dcf"
@@ -4121,6 +4143,11 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
+axe-core@^4.2.0:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.3.5.tgz#78d6911ba317a8262bfee292aeafcc1e04b49cc5"
+  integrity sha512-WKTW1+xAzhMS5dJsxWkliixlO/PqC4VhmO9T4juNYcaTg9jzWiJsou6m5pxWYGfigWbwzJWeFY6z47a+4neRXA==
+
 babel-jest@^27.4.6:
   version "27.4.6"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-27.4.6.tgz#4d024e69e241cdf4f396e453a07100f44f7ce314"
@@ -4963,6 +4990,11 @@ chownr@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
+
+chromatic@^6.3.4:
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.3.4.tgz#30cd30a780b8abd2d00965a04cce205b504103a9"
+  integrity sha512-L3Pkz+fhl4v4dlmE2Nd6HdosoPHZ8iASKjcu3NW8sPBu9CVwq/EBOzaGrq8zEaF5sLjCOndJjaUFgHHlE1b8xQ==
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"
