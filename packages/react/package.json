@@ -4,7 +4,19 @@
   "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-storysource": "^6.4.12",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.4.12",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.4.7",
     "react": "^17.0.2",
     "rollup": "^2.63.0",
     "rollup-plugin-typescript2": "^0.31.1",
@@ -12,6 +24,10 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "test": "jest --verbose",
+    "test:watch": "yarn test --watch",
+    "start-storybook": "start-storybook",
+    "build-storybook": "build-storybook"
   }
 }
